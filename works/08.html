@@ -231,8 +231,8 @@
         <p class="d08-mvp-card__list">· 여행 1건을 앱 안에서 처음부터 끝까지 만들 수 있다<br>· 장소 검색 후 일정에 담기까지 3번 안에 끝난다<br>· 여행을 열 때 “불러오는 중” 대기가 보이지 않는다<br>· 모바일(iPhone)에서 한 손으로 조작할 수 있다<br>· 여행 중 필요한 서류·영수증을 앱에서 다시 찾을 수 있다</p>
       </div>
       <div class="d08-mvp-card">
-        <p class="d08-mvp-card__title">MVP 이후 확장</p>
-        <p class="d08-mvp-card__list">· AI 추천 일정(도시·일수·관심사 기반 초안)<br>· 구글 지도 저장 목록(CSV) 가져오기<br>· 영수증 사진으로 지출 자동 입력<br>· 여행 공유 링크<br>· 다녀온 여행 표지(앨범 경험)<br>· 가입자 통계(관리자)</p>
+        <p class="d08-mvp-card__title">MVP 이후 실제로 확장한 것</p>
+        <p class="d08-mvp-card__list">· AI 추천 일정(도시·일수·관심사 기반 초안)<br>· 구글 지도 저장 목록(CSV) 가져오기<br>· 영수증 사진으로 지출 자동 입력<br>· 여행 공유 링크<br>· 다녀온 여행 표지(앨범 경험, 나의 사진 업로드)<br>· 가입자 통계(관리자)</p>
       </div>
     </div>
   </section>
@@ -240,19 +240,19 @@
   <section class="d08-section d08-flowdata">
     <div class="d08-wrap d08-flowdata__head">
       <p class="d08-h2">데이터의 흐름</p>
-      <p class="d08-flowdata__desc">한 여행을 중심으로 장소·일정·지출이 연결되고, 첨부 파일이 보관함으로 모임</p>
+      <p class="d08-flowdata__desc">한 사용자가 여러 여행을 만들고, 한 여행에 여러 장소·일정·지출이 연결되며, 첨부 파일은 보관함으로 모임</p>
     </div>
     <div class="d08-wrap d08-entities">
       <div class="d08-entity">
         <p class="d08-entity__title">User</p>
         <p class="d08-entity__desc">구글·카카오 계정<br>세션 쿠키</p>
       </div>
-      <p class="d08-entity__rel">1:N</p>
+      <p class="d08-entity__rel">→</p>
       <div class="d08-entity">
         <p class="d08-entity__title">Trip</p>
         <p class="d08-entity__desc">이름 · 기간 · 지역<br>출·도착 정보</p>
       </div>
-      <p class="d08-entity__rel">1:N</p>
+      <p class="d08-entity__rel">→</p>
       <div class="d08-entity-pair">
         <div class="d08-entity d08-entity--fixed">
           <p class="d08-entity__title">Place</p>
@@ -263,7 +263,7 @@
           <p class="d08-entity__desc">일차 · 시간 · 순서<br>메모 · 첨부(사진/파일/링크)</p>
         </div>
       </div>
-      <p class="d08-entity__rel">1:N</p>
+      <p class="d08-entity__rel">→</p>
       <div class="d08-entity">
         <p class="d08-entity__title">Expense</p>
         <p class="d08-entity__desc">금액 · 통화 · 결제수단<br>영수증 사진 · 일정 연결(선택)</p>
