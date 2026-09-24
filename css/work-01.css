@@ -89,77 +89,6 @@
 .d01-pair {
   gap: 40px;
 }
-
-.d01-pair-grid {
-  display: flex;
-  flex-direction: column;
-}
-
-.d01-pair-row {
-  display: flex;
-  gap: 80px;
-  padding: 40px 0;
-  border-top: 1px solid var(--color-border-light);
-}
-
-.d01-pair-num {
-  flex: 1 1 0;
-  min-width: 0;
-  font-family: 'IBM Plex Sans KR', sans-serif;
-  font-weight: 200;
-  font-size: 32px;
-  line-height: 1.6;
-  letter-spacing: -0.32px;
-  color: #b2b2b2;
-}
-
-.d01-pair-col {
-  flex: 1 1 0;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.d01-pair-col__head {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.d01-tag {
-  display: inline-flex;
-  width: fit-content;
-  padding: 5px 10px;
-  border-radius: 100px;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.4;
-  background: rgba(0, 0, 0, 0.07);
-  color: #666;
-}
-
-.d01-tag--solution {
-  background: #000;
-  color: #fff;
-}
-
-.d01-pair-heading {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: -0.16px;
-  color: #000;
-}
-
-.d01-pair-desc {
-  font-size: 14px;
-  line-height: 1.6;
-  letter-spacing: -0.14px;
-  color: #333;
-}
-
 /* ---------- 03. 적용 시나리오 (타임라인) ---------- */
 .d01-timeline-section {
   gap: 60px;
@@ -386,19 +315,6 @@
 
 /* ---------- 반응형 ---------- */
 @media (max-width: 1024px) {
-  .d01-pair-row {
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-
-  .d01-pair-num {
-    flex-basis: 100%;
-  }
-
-  .d01-pair-col {
-    flex-basis: calc(50% - 8px);
-  }
-
   .d01-result__checklist {
     gap: 32px 24px;
   }
@@ -421,11 +337,6 @@
   .d01-meta {
     gap: 24px;
   }
-
-  .d01-pair-col {
-    flex-basis: 100%;
-  }
-
   .d01-timeline {
     flex-direction: column;
     gap: 32px;

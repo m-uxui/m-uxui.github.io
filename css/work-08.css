@@ -103,80 +103,9 @@
   color: #b2b2b2;
 }
 
-/* ---------- 02. 현안 → 전략 ---------- */
+/* ---------- 02. 현안 → 전략 (공용 .pair-* 클래스는 work.css 참고) ---------- */
 .d08-pair {
   gap: 40px;
-}
-
-.d08-pair-grid {
-  display: flex;
-  flex-direction: column;
-}
-
-.d08-pair-row {
-  display: flex;
-  gap: 80px;
-  padding: 40px 0;
-  border-top: 1px solid var(--color-border-light);
-}
-
-.d08-pair-row--head {
-  padding: 20px 0 20px 320px;
-}
-
-.d08-pair-row--head .d08-pair-col {
-  flex: 1 1 0;
-}
-
-.d08-pair-row--last {
-  border-bottom: 1px solid var(--color-border-light);
-}
-
-.d08-pair-label {
-  font-weight: 500;
-  font-size: 12px;
-  color: #000;
-}
-
-.d08-pair-num {
-  flex: 0 0 240px;
-  font-family: 'IBM Plex Sans KR', sans-serif;
-  font-weight: 200;
-  font-size: 32px;
-  line-height: 1.6;
-  letter-spacing: -0.32px;
-  color: #b2b2b2;
-}
-
-.d08-pair-col {
-  flex: 1 1 0;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.d08-pair-heading {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: -0.16px;
-  color: #000;
-}
-
-.d08-pair-desc {
-  font-size: 14px;
-  line-height: 1.6;
-  letter-spacing: -0.14px;
-  color: #333;
-}
-
-.d08-pair-note {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.6;
-  letter-spacing: -0.14px;
-  color: #000;
 }
 
 /* ---------- 03. 가설 → 검증 → 재설계 ---------- */
@@ -749,19 +678,6 @@
 
 /* ===== 반응형 ===== */
 @media (max-width: 1024px) {
-  .d08-pair-row {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .d08-pair-row--head {
-    display: none;
-  }
-
-  .d08-pair-num {
-    flex-basis: auto;
-  }
-
   .d08-journey {
     flex-direction: column;
   }
@@ -843,7 +759,6 @@
     height: 240px;
   }
 
-  .d08-pair-desc,
   .d08-journey-desc,
   .d08-mvp-card__list {
     white-space: normal;
