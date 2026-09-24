@@ -121,9 +121,7 @@
 }
 
 .d08-pair-row--head {
-  padding: 0 0 20px;
-  border-top: none;
-  padding-left: 320px;
+  padding: 20px 0 20px 320px;
 }
 
 .d08-pair-row--head .d08-pair-col {
