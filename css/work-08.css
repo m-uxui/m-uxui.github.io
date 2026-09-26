@@ -92,15 +92,24 @@
   color: #000;
 }
 
-.d08-figure__placeholder {
-  height: 760px;
+.d08-figure {
+  width: 100%;
+  min-height: 840px;
   background: #f7f7f7;
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 12px;
-  letter-spacing: 0.72px;
-  color: #b2b2b2;
+}
+
+.d08-figure__img {
+  width: var(--fig-w, 100%);
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 이미지 파일이 아직 없으면(404) 회색 박스만 보이도록 숨김 */
+.d08-figure__img--missing {
+  display: none;
 }
 
 /* ---------- 02. 현안 → 전략 (공용 .pair-* 클래스는 work.css 참고) ---------- */
@@ -391,16 +400,6 @@
   gap: 8px;
 }
 
-.d08-entity--fixed {
-  flex: 0 0 220px;
-  min-width: 220px;
-}
-
-.d08-entity-pair {
-  display: flex;
-  gap: 12px;
-}
-
 .d08-entity__title {
   font-weight: 600;
   font-size: 16px;
@@ -568,28 +567,36 @@
 }
 
 .d08-screens-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 80px 24px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 80px 40px;
 }
 
 .d08-screen-item {
-  flex: 0 0 calc(25% - 18px);
-  min-width: 260px;
   display: flex;
   flex-direction: column;
   gap: 32px;
+  min-width: 0;
 }
 
-.d08-screen-item__thumb {
-  height: 340px;
+.d08-screen-item__figure {
+  width: 100%;
+  min-height: 460px;
   background: #f7f7f7;
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 12px;
-  letter-spacing: 0.72px;
-  color: #b2b2b2;
+}
+
+.d08-screen-item__figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.d08-screen-item__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .d08-screen-item__title {
@@ -713,14 +720,6 @@
     align-items: stretch;
   }
 
-  .d08-entity--fixed {
-    min-width: 0;
-  }
-
-  .d08-entity-pair {
-    flex-direction: column;
-  }
-
   .d08-flow__row {
     flex-direction: column;
     align-items: flex-start;
@@ -734,10 +733,6 @@
   .d08-diff-grid {
     flex-direction: column;
     gap: 32px;
-  }
-
-  .d08-screen-item {
-    flex-basis: calc(50% - 12px);
   }
 
   .d08-result__checklist {
@@ -755,8 +750,8 @@
     padding-bottom: 48px;
   }
 
-  .d08-figure__placeholder {
-    height: 240px;
+  .d08-figure {
+    min-height: 240px;
   }
 
   .d08-journey-desc,
@@ -768,12 +763,13 @@
     font-size: 24px;
   }
 
-  .d08-screen-item {
-    flex-basis: 100%;
+  .d08-screens-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
   }
 
-  .d08-screen-item__thumb {
-    height: 200px;
+  .d08-screen-item__figure {
+    min-height: 200px;
   }
 
   .d08-result {

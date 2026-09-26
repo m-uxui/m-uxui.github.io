@@ -133,7 +133,10 @@
       "Bash(curl -sL -o fig_gen2_1.png \"https://www.figma.com/api/mcp/asset/58fc4cba-be5c-469d-a8f2-4ae3ce2b2510.png\")",
       "Bash(curl -sL -o fig_gen2_2.png \"https://www.figma.com/api/mcp/asset/774e0fc1-d960-4018-aeec-de2192771560.png\")",
       "Bash(curl -sL -o /private/tmp/claude-501/-Users-myung-Desktop-portfolio/bacb789f-2b92-49ec-a6a2-d0b95a8ed8fe/scratchpad/fig119/imgAvatar.svg \"https://www.figma.com/api/mcp/asset/a2f6ec26-c1a3-494d-9bbb-e4621e3a4263.svg\")",
-      "Bash(curl -sL -o /Users/myung/Desktop/portfolio/assets/icons/github-badge.svg \"https://www.figma.com/api/mcp/asset/43deff85-4542-4c44-9215-d9d34065ff86.svg\")"
+      "Bash(curl -sL -o /Users/myung/Desktop/portfolio/assets/icons/github-badge.svg \"https://www.figma.com/api/mcp/asset/43deff85-4542-4c44-9215-d9d34065ff86.svg\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }

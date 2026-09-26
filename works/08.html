@@ -32,7 +32,7 @@
 
   <section class="d08-section d08-intro">
     <div class="d08-wrap d08-intro__top">
-      <h1 class="d08-title">여행 플래너 'gilow'</h1>
+      <h1 class="d08-title">여행 플래너 ‘gilow’</h1>
       <div class="d08-meta">
         <div class="d08-meta__item">
           <p class="d08-meta__label">디바이스</p>
@@ -53,7 +53,7 @@
       <p>PC에서는 일정과 지도를 나란히 보며 여행 전체 일정을 계획하고, Mobile에서는 일정 목록과 지도 모드를 오가며 여행 중 이동 정보를 확인할 수 있도록 설계<br>장소를 추가하고 Drag &amp; Drop으로 여정을 편집하며, 예약한 바우처를 일정에 연결해 보관하고 여행 중 발생한 영수증을 모아 여행 경비까지 기록할 수 있는 경험을 구축</p>
     </div>
     <div class="d08-wrap d08-figure">
-      <div class="d08-figure__placeholder">스크린샷 영역</div>
+      <img class="d08-figure__img" style="--fig-w:1560px;" src="../assets/images/work-08/08-01.png" alt="gilow 메인 화면" onerror="this.classList.add('d08-figure__img--missing')">
     </div>
   </section>
 
@@ -110,37 +110,6 @@
           <p class="pair-heading">지도 서비스를 대체하지 않고 역할 분리</p>
           <p class="pair-desc">Google Map Tile을 사용해 일관된 지도 경험을 유지하고,<br>해외 → Google Maps<br>국내 → Naver Map<br>으로 연결하여 상세 장소정보와 길찾기는 각 지도 서비스의 강점을 활용</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="d08-section d08-journey-section">
-    <p class="d08-wrap d08-h2">가설 → 검증 → 재설계</p>
-    <div class="d08-wrap d08-journey">
-      <div class="d08-journey-card">
-        <p class="d08-journey-num">1</p>
-        <p class="d08-journey-title">처음의 가설</p>
-        <p class="d08-journey-desc">“여행에 필요한 지도와 장소 정보를 하나의 서비스에서 제공하면 더 편리하지 않을까?”</p>
-      </div>
-      <div class="d08-journey-card">
-        <p class="d08-journey-num">2</p>
-        <p class="d08-journey-title">실제 구현</p>
-        <p class="d08-journey-desc">Google Maps 기반으로 장소 검색 · 지도 · 일정 · 이동 동선을 구현</p>
-      </div>
-      <div class="d08-journey-card">
-        <p class="d08-journey-num">3</p>
-        <p class="d08-journey-title">실제 사용</p>
-        <p class="d08-journey-desc">실제 데이터를 넣어 여행 일정을 구성하고 API 사용 구조와 장소 정보 활용성을 검증</p>
-      </div>
-      <div class="d08-journey-card">
-        <p class="d08-journey-num">4</p>
-        <p class="d08-journey-title">문제 발견</p>
-        <p class="d08-journey-desc">API 비용 + 대체 서비스의 데이터 품질 문제</p>
-      </div>
-      <div class="d08-journey-card">
-        <p class="d08-journey-num">5</p>
-        <p class="d08-journey-title">재설계</p>
-        <p class="d08-journey-desc">모든 것을 직접 제공하는 서비스가 아니라 여행 계획을 중심으로 기존 지도 서비스와 연결하는 구조로 전환</p>
       </div>
     </div>
   </section>
@@ -238,10 +207,41 @@
     </div>
   </section>
 
+  <section class="d08-section d08-journey-section">
+    <p class="d08-wrap d08-h2">가설 → 검증 → 재설계</p>
+    <div class="d08-wrap d08-journey">
+      <div class="d08-journey-card">
+        <p class="d08-journey-num">1</p>
+        <p class="d08-journey-title">처음의 가설</p>
+        <p class="d08-journey-desc">“여행에 필요한 지도와 장소 정보를 하나의 서비스에서 제공하면 더 편리하지 않을까?”</p>
+      </div>
+      <div class="d08-journey-card">
+        <p class="d08-journey-num">2</p>
+        <p class="d08-journey-title">실제 구현</p>
+        <p class="d08-journey-desc">Google Maps 기반으로 장소 검색 · 지도 · 일정 · 이동 동선을 구현</p>
+      </div>
+      <div class="d08-journey-card">
+        <p class="d08-journey-num">3</p>
+        <p class="d08-journey-title">실제 사용</p>
+        <p class="d08-journey-desc">실제 데이터를 넣어 여행 일정을 구성하고 API 사용 구조와 장소 정보 활용성을 검증</p>
+      </div>
+      <div class="d08-journey-card">
+        <p class="d08-journey-num">4</p>
+        <p class="d08-journey-title">문제 발견</p>
+        <p class="d08-journey-desc">API 비용 + 대체 서비스의 데이터 품질 문제</p>
+      </div>
+      <div class="d08-journey-card">
+        <p class="d08-journey-num">5</p>
+        <p class="d08-journey-title">재설계</p>
+        <p class="d08-journey-desc">모든 것을 직접 제공하는 서비스가 아니라 여행 계획을 중심으로 기존 지도 서비스와 연결하는 구조로 전환</p>
+      </div>
+    </div>
+  </section>
+
   <section class="d08-section d08-flowdata">
     <div class="d08-wrap d08-flowdata__head">
       <p class="d08-h2">데이터의 흐름</p>
-      <p class="d08-flowdata__desc">한 사용자가 여러 여행을 만들고, 한 여행에 여러 장소·일정·지출이 연결되며, 첨부 파일은 보관함으로 모임</p>
+      <p class="d08-flowdata__desc">한 여행을 중심으로 장소·일정·지출이 연결되고, 첨부 파일이 보관함으로 모입니다.</p>
     </div>
     <div class="d08-wrap d08-entities">
       <div class="d08-entity">
@@ -254,15 +254,14 @@
         <p class="d08-entity__desc">이름 · 기간 · 지역<br>출·도착 정보</p>
       </div>
       <p class="d08-entity__rel">→</p>
-      <div class="d08-entity-pair">
-        <div class="d08-entity d08-entity--fixed">
-          <p class="d08-entity__title">Place</p>
-          <p class="d08-entity__desc">이름 · 좌표 · 카테고리<br>외부 지도 링크 정보</p>
-        </div>
-        <div class="d08-entity d08-entity--fixed">
-          <p class="d08-entity__title">ScheduleItem</p>
-          <p class="d08-entity__desc">일차 · 시간 · 순서<br>메모 · 첨부(사진/파일/링크)</p>
-        </div>
+      <div class="d08-entity">
+        <p class="d08-entity__title">Place</p>
+        <p class="d08-entity__desc">이름 · 좌표 · 카테고리<br>외부 지도 링크 정보</p>
+      </div>
+      <p class="d08-entity__rel">→</p>
+      <div class="d08-entity">
+        <p class="d08-entity__title">ScheduleItem</p>
+        <p class="d08-entity__desc">일차 · 시간 · 순서<br>메모 · 첨부(사진/파일/링크)</p>
       </div>
       <p class="d08-entity__rel">→</p>
       <div class="d08-entity">
@@ -320,11 +319,11 @@
         <p class="d08-eyebrow">Highlight 01 · Itinerary</p>
         <p class="d08-block__title">장소를 옮기는 것만으로 여정이 바뀐다</p>
       </div>
-      <p class="d08-block__desc">여행 일정의 핵심 행동을 '입력'이 아니라 '배치'로 정의<br>장소를 추가하면 일정 카드가 생성되고, Drag &amp; Drop으로 순서를 바꾸면 여행 동선도 함께 확인<br>여행자가 머릿속으로 그린 여행을 화면에서 직접 움직이며 완성하도록 설계</p>
+      <p class="d08-block__desc">여행 일정의 핵심 행동을 ‘입력’이 아니라 ‘배치’로 정의했습니다.<br>장소를 추가하면 일정 카드가 생성되고 Drag &amp; Drop으로 순서를 변경하면 여행 동선도 함께 확인할 수 있습니다.<br><br>여행자가 머릿속으로 계획한 여행을 화면에서 직접 움직이며 완성할 수 있도록 설계했습니다.</p>
       <p class="d08-block__flow">Add Place → Drag &amp; Drop → Route</p>
     </div>
     <div class="d08-wrap d08-figure">
-      <div class="d08-figure__placeholder">스크린샷 영역</div>
+      <img class="d08-figure__img" style="--fig-w:1560px;" src="../assets/images/work-08/08-02.png" alt="Highlight 01 · Itinerary 화면" onerror="this.classList.add('d08-figure__img--missing')">
     </div>
   </section>
 
@@ -334,11 +333,11 @@
         <p class="d08-eyebrow">Highlight 02 · Voucher → Schedule</p>
         <p class="d08-block__title">예약 서류가 일정 안으로 들어온다</p>
       </div>
-      <p class="d08-block__desc">바우처를 따로 저장하는 폴더가 아니라 여행 일정의 일부로 구성<br>항공권·예약 확인서 같은 파일을 일정에 첨부하면 보관함에서 바우처 · 영수증 · 사진으로 자동 분류<br>메일과 사진첩에서 예약 서류를 다시 찾는 단계를 줄이고, 필요한 순간 해당 일정에서 바로 확인하는 경험</p>
+      <p class="d08-block__desc">바우처를 따로 저장하는 폴더가 아니라 여행 일정의 일부로 다루었습니다.<br>항공권·예약 확인서 같은 파일을 해당 일정에 첨부하면 보관함에서 바우처 · 영수증 · 사진으로 자동 분류되어 모입니다.<br><br>예약 서류를 메일과 사진첩에서 다시 찾는 단계를 줄이고 필요한 순간 그 일정에서 바로 열어볼 수 있는 경험입니다.</p>
       <p class="d08-block__flow">Attach to Schedule → Voucher Storage</p>
     </div>
     <div class="d08-wrap d08-figure">
-      <div class="d08-figure__placeholder">스크린샷 영역</div>
+      <img class="d08-figure__img" style="--fig-w:1560px;" src="../assets/images/work-08/08-03.png" alt="Highlight 02 · Voucher 화면" onerror="this.classList.add('d08-figure__img--missing')">
     </div>
   </section>
 
@@ -346,24 +345,24 @@
     <div class="d08-wrap d08-diff__head">
       <p class="d08-eyebrow">Why Different</p>
       <p class="d08-h2">이런 점이 다릅니다</p>
-      <p class="d08-diff__desc">"기능이 많은 앱"이 아니라 "여행 중에 손이 덜 가는 앱"을 목표로 설계</p>
+      <p class="d08-diff__desc">“기능이 많은 앱”이 아니라 “여행 중에 손이 덜 가는 앱”을 목표로 했습니다.</p>
     </div>
     <div class="d08-wrap d08-diff-grid">
       <div class="d08-diff-item">
         <p class="d08-diff-item__title">나라에 맞는 지도로 자동 연결</p>
-        <p class="d08-diff-item__desc">국내 장소는 네이버 지도, 해외 장소는 구글 지도로 바로 연결<br>사용자는 어느 앱을 열지 고민하지 않도록 설계</p>
+        <p class="d08-diff-item__desc">국내 장소는 네이버 지도,<br>해외 장소는 구글 지도로 바로 연결됩니다.<br>사용자는 어느 앱을 열지 고민하지 않습니다.</p>
       </div>
       <div class="d08-diff-item">
         <p class="d08-diff-item__title">한 손으로 쓰는 모바일 우선</p>
-        <p class="d08-diff-item__desc">하단 시트와 페이지 전체 스크롤로 아이폰 Safari의 상태 표시줄·하단 막대까지 자연스럽게 이어지도록 조정</p>
+        <p class="d08-diff-item__desc">하단 시트와 페이지 전체 스크롤로 아이폰 Safari의<br>상태 표시줄·하단 막대까지 자연스럽게 이어지도록<br>다듬었습니다.</p>
       </div>
       <div class="d08-diff-item">
         <p class="d08-diff-item__title">누르면 바로 반영되는 반응</p>
-        <p class="d08-diff-item__desc">일정 추가·삭제는 서버 응답을 기다리지 않고 화면에 먼저 반영, 검색은 먼저 도착한 결과부터 표시</p>
+        <p class="d08-diff-item__desc">일정 추가·삭제는 서버 응답을 기다리지 않고<br>화면에 먼저 반영하고, 검색은 먼저 도착한<br>결과부터 보여줍니다.</p>
       </div>
       <div class="d08-diff-item">
         <p class="d08-diff-item__title">틀릴 수 있는 정보는 만들지 않음</p>
-        <p class="d08-diff-item__desc">영업시간처럼 틀리면 곤란한 정보는 직접 제공하지 않고, 사용자가 이미 신뢰하는 지도 앱으로 연결</p>
+        <p class="d08-diff-item__desc">영업시간처럼 틀리면 곤란한 정보는<br>직접 보여 주지 않고,<br>사용자가 이미 신뢰하는 지도 앱으로 연결합니다.</p>
       </div>
     </div>
   </section>
@@ -372,44 +371,76 @@
     <p class="d08-wrap d08-h2">그 외 주요 화면</p>
     <div class="d08-wrap d08-screens-grid">
       <div class="d08-screen-item">
-        <div class="d08-screen-item__thumb">화면 캡처 영역</div>
-        <p class="d08-screen-item__title">AI Itinerary</p>
-        <p class="d08-screen-item__desc">여행지와 기간을 입력하면 AI가 기본 여행 일정을 생성하고 사용자가 직접 수정</p>
+        <div class="d08-screen-item__figure">
+          <img src="../assets/images/work-08/08-04.png" alt="Login 화면" onerror="this.classList.add('d08-figure__img--missing')">
+        </div>
+        <div class="d08-screen-item__text">
+          <p class="d08-screen-item__title">Login</p>
+          <p class="d08-screen-item__desc">별도의 가입 필요없이 구글·카카오 계정으로 바로 시작</p>
+        </div>
       </div>
       <div class="d08-screen-item">
-        <div class="d08-screen-item__thumb">화면 캡처 영역</div>
-        <p class="d08-screen-item__title">Route</p>
-        <p class="d08-screen-item__desc">장소 간 거리와 이동 동선을 확인하고 필요한 경우 Google / Naver Maps로 연결</p>
+        <div class="d08-screen-item__figure">
+          <img src="../assets/images/work-08/08-05.png" alt="AI Itinerary 화면" onerror="this.classList.add('d08-figure__img--missing')">
+        </div>
+        <div class="d08-screen-item__text">
+          <p class="d08-screen-item__title">AI Itinerary</p>
+          <p class="d08-screen-item__desc">여행지와 기간을 입력하면 AI가 기본 여행 일정을 생성하고 사용자가 직접 수정</p>
+        </div>
       </div>
       <div class="d08-screen-item">
-        <div class="d08-screen-item__thumb">화면 캡처 영역</div>
-        <p class="d08-screen-item__title">Voucher</p>
-        <p class="d08-screen-item__desc">항공·숙소·투어 등 여행에 필요한 예약 정보를 한곳에 보관</p>
+        <div class="d08-screen-item__figure">
+          <img src="../assets/images/work-08/08-06.png" alt="Google Maps Import 화면" onerror="this.classList.add('d08-figure__img--missing')">
+        </div>
+        <div class="d08-screen-item__text">
+          <p class="d08-screen-item__title">Google Maps Import</p>
+          <p class="d08-screen-item__desc">구글 지도에 저장해 둔 장소 목록(CSV)을 가져와 여행 일정의 장소로 바로 활용</p>
+        </div>
       </div>
       <div class="d08-screen-item">
-        <div class="d08-screen-item__thumb">화면 캡처 영역</div>
-        <p class="d08-screen-item__title">Receipt</p>
-        <p class="d08-screen-item__desc">여행 중 영수증을 모아 지출 내역으로 기록</p>
+        <div class="d08-screen-item__figure">
+          <img src="../assets/images/work-08/08-07.png" alt="Route 화면" onerror="this.classList.add('d08-figure__img--missing')">
+        </div>
+        <div class="d08-screen-item__text">
+          <p class="d08-screen-item__title">Route</p>
+          <p class="d08-screen-item__desc">장소 간 거리와 이동 동선을 확인하고 길찾기 버튼을 통해 Google(해외) / Naver Maps(국내)로 연결</p>
+        </div>
       </div>
       <div class="d08-screen-item">
-        <div class="d08-screen-item__thumb">화면 캡처 영역</div>
-        <p class="d08-screen-item__title">Statistics</p>
-        <p class="d08-screen-item__desc">여행 후 카테고리별 지출과 전체 여행 경비 확인</p>
+        <div class="d08-screen-item__figure">
+          <img src="../assets/images/work-08/08-08.png" alt="Voucher 화면" onerror="this.classList.add('d08-figure__img--missing')">
+        </div>
+        <div class="d08-screen-item__text">
+          <p class="d08-screen-item__title">Voucher</p>
+          <p class="d08-screen-item__desc">항공·숙소·투어 등 여행에 필요한 예약 정보를 한곳에 보관</p>
+        </div>
       </div>
       <div class="d08-screen-item">
-        <div class="d08-screen-item__thumb">화면 캡처 영역</div>
-        <p class="d08-screen-item__title">Login</p>
-        <p class="d08-screen-item__desc">구글·카카오 계정으로 바로 시작하고, 같은 이메일이면 계정을 연결</p>
+        <div class="d08-screen-item__figure">
+          <img src="../assets/images/work-08/08-09.png" alt="Receipt 화면" onerror="this.classList.add('d08-figure__img--missing')">
+        </div>
+        <div class="d08-screen-item__text">
+          <p class="d08-screen-item__title">Receipt</p>
+          <p class="d08-screen-item__desc">여행 중 영수증을 모아 지출 내역으로 기록하고<br>카테고리별 지출과 전체 여행 경비 확인</p>
+        </div>
       </div>
       <div class="d08-screen-item">
-        <div class="d08-screen-item__thumb">화면 캡처 영역</div>
-        <p class="d08-screen-item__title">Trip Info</p>
-        <p class="d08-screen-item__desc">환율·시차·항공 시간·비자·전압 등 기초정보와 여행 기간 날씨를 도시별로 확인</p>
+        <div class="d08-screen-item__figure">
+          <img src="../assets/images/work-08/08-10.png" alt="Trip Info 화면" onerror="this.classList.add('d08-figure__img--missing')">
+        </div>
+        <div class="d08-screen-item__text">
+          <p class="d08-screen-item__title">Trip Info</p>
+          <p class="d08-screen-item__desc">환율·시차·항공 시간·비자·전압 등 기초정보와 여행 기간 날씨를 도시별로 확인</p>
+        </div>
       </div>
       <div class="d08-screen-item">
-        <div class="d08-screen-item__thumb">화면 캡처 영역</div>
-        <p class="d08-screen-item__title">Cover · Share</p>
-        <p class="d08-screen-item__desc">다녀온 여행은 대표 사진 표지로 열리고, 링크로 여행 일정을 공유</p>
+        <div class="d08-screen-item__figure">
+          <img src="../assets/images/work-08/08-11.png" alt="Cover · Share 화면" onerror="this.classList.add('d08-figure__img--missing')">
+        </div>
+        <div class="d08-screen-item__text">
+          <p class="d08-screen-item__title">Cover · Share</p>
+          <p class="d08-screen-item__desc">다녀온 여행은 대표 사진 표지로 열리고, 링크로 여행 일정을 공유</p>
+        </div>
       </div>
     </div>
   </section>
