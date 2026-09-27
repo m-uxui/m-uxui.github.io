@@ -94,7 +94,7 @@
 
 .d08-figure {
   width: 100%;
-  min-height: 840px;
+  aspect-ratio: 3120 / 1720;
   background: #f7f7f7;
   display: flex;
   justify-content: center;
@@ -382,18 +382,16 @@
 }
 
 .d08-entities {
-  background: #f7f7f7;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 20px;
-  padding: 40px 48px;
   flex-wrap: wrap;
 }
 
 .d08-entity {
   flex: 1 1 0;
   min-width: 0;
-  background: #fff;
+  background: #f7f7f7;
   padding: 22px;
   display: flex;
   flex-direction: column;
@@ -416,9 +414,11 @@
 }
 
 .d08-entity__rel {
+  align-self: center;
   font-family: 'IBM Plex Sans KR', sans-serif;
   font-weight: 200;
   font-size: 32px;
+  line-height: 1.6;
   letter-spacing: -0.32px;
   color: #b2b2b2;
   white-space: nowrap;
@@ -434,26 +434,32 @@
   padding: 40px 0 32px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+}
+
+.d08-flow:last-child {
+  border-bottom: 1px solid #eee;
 }
 
 .d08-flow__title {
   font-weight: 600;
   font-size: 18px;
+  line-height: 1.5;
   letter-spacing: -0.18px;
   color: #000;
+  white-space: pre-wrap;
 }
 
+/* 모든 흐름 행이 같은 5칸(스텝 5 + 화살표 4) 그리드를 써서 화살표 위치를 세로로 맞춤.
+   스텝이 4개인 행(C)은 마지막 칸이 자동으로 빈 공간이 됨 */
 .d08-flow__row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr) 36px) minmax(0, 1fr);
   align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  column-gap: 20px;
 }
 
 .d08-flow__step {
-  flex: 1 1 0;
-  min-width: 160px;
+  min-width: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.6;
@@ -462,9 +468,11 @@
 }
 
 .d08-flow__arrow {
+  text-align: center;
   font-family: 'IBM Plex Sans KR', sans-serif;
   font-weight: 200;
   font-size: 32px;
+  line-height: 1.6;
   letter-spacing: -0.32px;
   color: #b2b2b2;
 }
@@ -515,52 +523,6 @@
   color: #000;
 }
 
-/* ---------- 이런 점이 다릅니다 ---------- */
-.d08-diff {
-  gap: 60px;
-}
-
-.d08-diff__head {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.d08-diff__desc {
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: -0.16px;
-  color: #333;
-}
-
-.d08-diff-grid {
-  display: flex;
-  gap: 80px;
-}
-
-.d08-diff-item {
-  flex: 1 1 0;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.d08-diff-item__title {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: -0.18px;
-  color: #000;
-}
-
-.d08-diff-item__desc {
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: -0.16px;
-  color: #333;
-}
-
 /* ---------- 그 외 주요 화면 ---------- */
 .d08-screens {
   gap: 48px;
@@ -581,7 +543,7 @@
 
 .d08-screen-item__figure {
   width: 100%;
-  min-height: 460px;
+  aspect-ratio: 1520 / 920;
   background: #f7f7f7;
   display: flex;
   justify-content: center;
@@ -679,6 +641,7 @@
 
 .d08-result__label {
   font-size: 18px;
+  line-height: 1.6;
   letter-spacing: -0.18px;
   color: #000;
 }
@@ -721,6 +684,7 @@
   }
 
   .d08-flow__row {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
@@ -728,11 +692,6 @@
 
   .d08-flow__arrow {
     display: none;
-  }
-
-  .d08-diff-grid {
-    flex-direction: column;
-    gap: 32px;
   }
 
   .d08-result__checklist {
@@ -750,10 +709,6 @@
     padding-bottom: 48px;
   }
 
-  .d08-figure {
-    min-height: 240px;
-  }
-
   .d08-journey-desc,
   .d08-mvp-card__list {
     white-space: normal;
@@ -766,10 +721,6 @@
   .d08-screens-grid {
     grid-template-columns: 1fr;
     gap: 48px;
-  }
-
-  .d08-screen-item__figure {
-    min-height: 200px;
   }
 
   .d08-result {
