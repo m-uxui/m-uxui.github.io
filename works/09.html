@@ -54,6 +54,7 @@
     <div class="d09-wrap d09-desc">
       <p class="d09-desc__lead">흩어진 북마크를 카테고리별로 정리하고, 드래그 한 번으로 순서를 바꾸는 개인 북마크 매니저</p>
       <p>이미지 썸네일 그리드로 한눈에 훑어보고, 로그인 한 번으로 어떤 기기에서든 같은 북마크를 보는 구조<br>카테고리 관리, 검색, 드래그 정렬, 가져오기/내보내기까지 한 화면에서 해결</p>
+      <p class="d09-desc__why">북마크를 브라우저에 쌓아 두기만 하고 다시 찾기 어려워서 불편했고, 그래서 직접 만들었습니다.</p>
     </div>
     <div class="d09-wrap d09-figure">
       <img class="d09-figure__img" style="--fig-w:1560px;" src="../assets/images/work-09/09-01.png" alt="마이 북마크 메인 화면" onerror="this.classList.add('d09-figure__img--missing')">
@@ -93,12 +94,12 @@
       <div class="pair-row">
         <p class="pair-num">03</p>
         <div class="pair-col">
-          <p class="pair-heading">순서 정리의 불편함</p>
-          <p class="pair-desc">중요도 순으로 정렬하려면<br>삭제 후 다시 등록해야 함</p>
+          <p class="pair-heading">북마크에 맥락을 남길 수 없음</p>
+          <p class="pair-desc">즐겨찾기에는 URL과 제목만 남아서<br>왜 저장했는지, 어디에 쓸지 기록할 곳이 없음</p>
         </div>
         <div class="pair-col">
-          <p class="pair-heading">Drag &amp; Drop 순서 변경</p>
-          <p class="pair-desc">카드를 끌어서 놓는 것만으로 순서 변경<br>화면에 먼저 반영하고 서버에는 뒤에서 저장</p>
+          <p class="pair-heading">북마크마다 메모 기록</p>
+          <p class="pair-desc">카드마다 메모를 남기고 검색 대상에 포함<br>나중에 메모 검색으로 맥락까지 다시 찾기</p>
         </div>
       </div>
       <div class="pair-row pair-row--last">
@@ -149,7 +150,7 @@
             <span class="d09-timeline-tag">SAVE</span>
           </div>
           <p class="d09-timeline-title">북마크 추가</p>
-          <p class="d09-timeline-desc">URL만 붙여넣기<br>→ 제목과 파비콘 자동 채움</p>
+          <p class="d09-timeline-desc">URL만 붙여넣기<br>→ 사이트 제목 자동 채움</p>
         </div>
         <div class="d09-timeline-step">
           <div class="d09-timeline-step__head">
@@ -199,11 +200,11 @@
       </div>
       <div class="d09-mvp-card">
         <p class="d09-mvp-card__title">검증 기준 (목표)</p>
-        <p class="d09-mvp-card__list">· 북마크 추가가 URL 붙여넣기 한 번으로 끝난다<br>· 다른 기기에서 로그인하면 같은 목록이 바로 보인다<br>· 드래그 후 순서가 지연 없이 즉시 반영된다<br>· 사용자 간 데이터가 섞이지 않는다<br>· 모바일에서도 그리드가 깨지지 않는다</p>
+        <p class="d09-mvp-card__list">· 북마크 추가가 URL 붙여넣기 한 번으로 끝난다<br>· 다른 기기에서 로그인하면 같은 목록이 바로 보인다<br>· 드래그 후 순서가 지연 없이 즉시 반영된다<br>· 사용자 간 데이터가 섞이지 않는다<br>· 기존 북마크에도 사이트 제목이 자동으로 채워진다<br>· 모바일에서도 그리드가 깨지지 않는다</p>
       </div>
       <div class="d09-mvp-card">
         <p class="d09-mvp-card__title">MVP 이후 실제로 확장한 것</p>
-        <p class="d09-mvp-card__list">· 실시간 동기화 (Realtime)<br>· 계정 삭제 (본인 데이터 전부 영구 삭제)<br>· 가입자·방문자 통계 (관리자 전용)<br>· 방문 분석 (GA4)<br>· 파비콘·로고 적용<br>· 사용자별 데이터 완전 격리</p>
+        <p class="d09-mvp-card__list">· 사이트 제목 자동 가져오기 (카드 호버 시 노출)<br>· 기존 북마크도 로그인 시 자동으로 제목 채우기<br>· 실시간 동기화 (Realtime)<br>· 계정 삭제 (본인 데이터 전부 영구 삭제)<br>· 가입자·방문자 통계 (관리자 전용)<br>· 방문 분석 (GA4)<br>· 파비콘·로고 적용</p>
       </div>
     </div>
   </section>
@@ -266,7 +267,7 @@
         <div class="d09-flow__row">
           <p class="d09-flow__step">URL 입력</p>
           <p class="d09-flow__arrow">→</p>
-          <p class="d09-flow__step">도메인·제목 자동 채움</p>
+          <p class="d09-flow__step">사이트 제목 자동 가져오기</p>
           <p class="d09-flow__arrow">→</p>
           <p class="d09-flow__step">Bookmark 저장</p>
           <p class="d09-flow__arrow">→</p>
@@ -337,7 +338,7 @@
         </div>
         <div class="d09-screen-item__text">
           <p class="d09-screen-item__title">Grid</p>
-          <p class="d09-screen-item__desc">썸네일 카드로 한눈에 훑고 카테고리별 개수 확인</p>
+          <p class="d09-screen-item__desc">썸네일 카드로 한눈에 훑고, 마우스를 올리면 사이트 제목을 한 줄로 확인</p>
         </div>
       </div>
       <div class="d09-screen-item">
@@ -346,7 +347,7 @@
         </div>
         <div class="d09-screen-item__text">
           <p class="d09-screen-item__title">Add Bookmark</p>
-          <p class="d09-screen-item__desc">URL만 넣으면 제목과 파비콘을 자동으로 채움</p>
+          <p class="d09-screen-item__desc">URL을 넣고 칸 밖을 누르면 사이트 제목을 자동으로 채움</p>
         </div>
       </div>
       <div class="d09-screen-item">
