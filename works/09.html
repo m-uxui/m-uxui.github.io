@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RGNQ0SLWPC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RGNQ0SLWPC');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>마이 북마크 ‘My Bookmarks’ | Kim Myung Ae Portfolio</title>
+<meta name="description" content="마이 북마크 프로젝트 상세">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/work.css">
+<link rel="stylesheet" href="../css/work-09.css">
+</head>
+<body class="work-page">
+
+<a href="../index.html" class="close-btn d09-close-btn" aria-label="목록으로 닫기">
+  <span class="close-btn__x"><span class="close-btn__line"></span><span class="close-btn__line"></span></span>
+</a>
+
+<main>
+
+  <section class="d09-section d09-intro">
+    <div class="d09-wrap d09-intro__top">
+      <div class="d09-title-col">
+        <h1 class="d09-title">마이 북마크 ‘My Bookmarks’</h1>
+        <a class="d09-cta" href="https://my-bookmk.vercel.app" target="_blank" rel="noopener noreferrer">사이트 바로 가기 <span class="d09-cta__arrow">↗</span></a>
+      </div>
+      <div class="d09-meta">
+        <div class="d09-meta__item">
+          <p class="d09-meta__label">디바이스</p>
+          <p class="d09-meta__value">PC, Mobile</p>
+        </div>
+        <div class="d09-meta__item">
+          <p class="d09-meta__label">기여도</p>
+          <p class="d09-meta__value">100%</p>
+        </div>
+        <div class="d09-meta__item">
+          <p class="d09-meta__label">사용툴</p>
+          <p class="d09-meta__value">Claude Code · GitHub · Supabase · Vercel 등</p>
+        </div>
+      </div>
+    </div>
+    <div class="d09-wrap d09-desc">
+      <p class="d09-desc__lead">흩어진 북마크를 카테고리별로 정리하고, 드래그 한 번으로 순서를 바꾸는 개인 북마크 매니저</p>
+      <p>이미지 썸네일 그리드로 한눈에 훑어보고, 로그인 한 번으로 어떤 기기에서든 같은 북마크를 보는 구조<br>카테고리 관리, 검색, 드래그 정렬, 가져오기/내보내기까지 한 화면에서 해결</p>
+    </div>
+    <div class="d09-wrap d09-figure">
+      <img class="d09-figure__img" style="--fig-w:1560px;" src="../assets/images/work-09/09-01.png" alt="마이 북마크 메인 화면" onerror="this.classList.add('d09-figure__img--missing')">
+    </div>
+  </section>
+
+  <section class="d09-section d09-pair">
+    <p class="d09-wrap d09-h2">현안 → 전략</p>
+    <div class="d09-wrap pair-grid">
+      <div class="pair-row pair-row--head">
+        <div class="pair-col"><p class="pair-label">현안</p></div>
+        <div class="pair-col"><p class="pair-label">전략</p></div>
+      </div>
+      <div class="pair-row">
+        <p class="pair-num">01</p>
+        <div class="pair-col">
+          <p class="pair-heading">북마크 정리의 번거로움</p>
+          <p class="pair-desc">브라우저 기본 북마크는 폴더가 깊어져<br>원하는 사이트를 다시 찾기 어려움</p>
+        </div>
+        <div class="pair-col">
+          <p class="pair-heading">카테고리 + 썸네일 그리드</p>
+          <p class="pair-desc">아이콘 중심 카드로 한눈에 훑고<br>카테고리로 나눠 탐색</p>
+        </div>
+      </div>
+      <div class="pair-row">
+        <p class="pair-num">02</p>
+        <div class="pair-col">
+          <p class="pair-heading">기기마다 따로 있는 북마크</p>
+          <p class="pair-desc">PC와 휴대폰에 저장한 북마크가<br>서로 공유되지 않음</p>
+          <p class="pair-note">PC 저장 → 휴대폰에서 다시 찾기 → 결국 재등록</p>
+        </div>
+        <div class="pair-col">
+          <p class="pair-heading">구글·카카오 로그인 기반 동기화</p>
+          <p class="pair-desc">로그인 한 번으로 어느 기기에서든<br>같은 북마크를 실시간으로 확인</p>
+        </div>
+      </div>
+      <div class="pair-row">
+        <p class="pair-num">03</p>
+        <div class="pair-col">
+          <p class="pair-heading">순서 정리의 불편함</p>
+          <p class="pair-desc">중요도 순으로 정렬하려면<br>삭제 후 다시 등록해야 함</p>
+        </div>
+        <div class="pair-col">
+          <p class="pair-heading">Drag &amp; Drop 순서 변경</p>
+          <p class="pair-desc">카드를 끌어서 놓는 것만으로 순서 변경<br>화면에 먼저 반영하고 서버에는 뒤에서 저장</p>
+        </div>
+      </div>
+      <div class="pair-row pair-row--last">
+        <p class="pair-num">04</p>
+        <div class="pair-col">
+          <p class="pair-heading">사용자 간 데이터 혼선</p>
+          <p class="pair-desc">여러 사람이 써도<br>서로의 북마크가 섞이면 안 됨</p>
+        </div>
+        <div class="pair-col">
+          <p class="pair-heading">사용자별 데이터 격리 (RLS)</p>
+          <p class="pair-desc">모든 행을 로그인한 사용자 기준으로만 읽고 쓰도록<br>DB 정책에서 강제</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="d09-section d09-persona">
+    <p class="d09-wrap d09-h2">퍼소나 &amp; 여정</p>
+    <div class="d09-wrap d09-persona-group">
+      <div class="d09-persona-intro">
+        <img src="../assets/icons/avatar-8.svg" alt="">
+        <div class="d09-persona-intro__text">
+          <p class="d09-persona-intro__name">정보를 모으는 사람</p>
+          <p class="d09-persona-intro__desc">링크는 많이 저장하지만 정작 다시 찾아보는 일은 드문 사용자, 디자이너·개발자·학생</p>
+        </div>
+      </div>
+      <div class="d09-persona-tags">
+        <div class="d09-persona-tag">
+          <p class="d09-persona-tag__title">왜 힘든가</p>
+          <p class="d09-persona-tag__desc">북마크가 쌓일수록 폴더 구조가 무너지고<br>기기를 바꿀 때마다 다시 정리해야 함</p>
+        </div>
+        <div class="d09-persona-tag">
+          <p class="d09-persona-tag__title">무엇을 원하는가</p>
+          <p class="d09-persona-tag__desc">카테고리로 바로 나눠 저장하고<br>자주 보는 사이트를 위로 올려두고 싶음</p>
+        </div>
+        <div class="d09-persona-tag">
+          <p class="d09-persona-tag__title">무엇이면 만족하는가</p>
+          <p class="d09-persona-tag__desc">썸네일로 한눈에 찾고<br>어디서든 같은 목록을 바로 열 수 있으면 됨</p>
+        </div>
+      </div>
+    </div>
+    <div class="d09-wrap d09-timeline-block">
+      <p class="d09-timeline-heading">그래서, 북마크는 이렇게 쌓입니다</p>
+      <div class="d09-timeline">
+        <div class="d09-timeline-step">
+          <div class="d09-timeline-step__head">
+            <span class="d09-timeline-dot">1</span>
+            <span class="d09-timeline-tag">SAVE</span>
+          </div>
+          <p class="d09-timeline-title">북마크 추가</p>
+          <p class="d09-timeline-desc">URL만 붙여넣기<br>→ 제목과 파비콘 자동 채움</p>
+        </div>
+        <div class="d09-timeline-step">
+          <div class="d09-timeline-step__head">
+            <span class="d09-timeline-dot">2</span>
+            <span class="d09-timeline-tag">SORT</span>
+          </div>
+          <p class="d09-timeline-title">카테고리 정리</p>
+          <p class="d09-timeline-desc">카테고리 만들기<br>→ 카드를 Drag &amp; Drop으로 정렬</p>
+        </div>
+        <div class="d09-timeline-step">
+          <div class="d09-timeline-step__head">
+            <span class="d09-timeline-dot">3</span>
+            <span class="d09-timeline-tag">FIND</span>
+          </div>
+          <p class="d09-timeline-title">검색</p>
+          <p class="d09-timeline-desc">제목·주소·메모 어디서든<br>검색어 한 번으로 찾기</p>
+        </div>
+        <div class="d09-timeline-step">
+          <div class="d09-timeline-step__head">
+            <span class="d09-timeline-dot">4</span>
+            <span class="d09-timeline-tag">SYNC</span>
+          </div>
+          <p class="d09-timeline-title">기기 간 동기화</p>
+          <p class="d09-timeline-desc">구글·카카오 로그인<br>→ 다른 기기에서도 같은 목록</p>
+        </div>
+        <div class="d09-timeline-step">
+          <div class="d09-timeline-step__head">
+            <span class="d09-timeline-dot">5</span>
+            <span class="d09-timeline-tag">MANAGE</span>
+          </div>
+          <p class="d09-timeline-title">백업·이동</p>
+          <p class="d09-timeline-desc">JSON으로 내보내기<br>→ 다른 계정에 가져오기</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="d09-section d09-mvp">
+    <div class="d09-wrap d09-mvp__head">
+      <p class="d09-h2">MVP 정의</p>
+      <p class="d09-mvp__hypothesis">검증하려는 가설 · “썸네일 그리드와 카테고리 정리만으로, 저장해 둔 북마크를 다시 찾는 시간이 줄어든다.”</p>
+    </div>
+    <div class="d09-wrap d09-mvp-grid">
+      <div class="d09-mvp-card">
+        <p class="d09-mvp-card__title">MVP — 반드시 있어야 하는 것</p>
+        <p class="d09-mvp-card__list">1. 구글·카카오 로그인<br>2. 북마크 추가·수정·삭제<br>3. 카테고리 추가·수정·삭제<br>4. 썸네일 그리드 + 파비콘 자동 표시<br>5. 제목·주소·메모 검색<br>6. 드래그로 순서 변경<br>7. JSON 가져오기·내보내기</p>
+      </div>
+      <div class="d09-mvp-card">
+        <p class="d09-mvp-card__title">검증 기준 (목표)</p>
+        <p class="d09-mvp-card__list">· 북마크 추가가 URL 붙여넣기 한 번으로 끝난다<br>· 다른 기기에서 로그인하면 같은 목록이 바로 보인다<br>· 드래그 후 순서가 지연 없이 즉시 반영된다<br>· 사용자 간 데이터가 섞이지 않는다<br>· 모바일에서도 그리드가 깨지지 않는다</p>
+      </div>
+      <div class="d09-mvp-card">
+        <p class="d09-mvp-card__title">MVP 이후 실제로 확장한 것</p>
+        <p class="d09-mvp-card__list">· 실시간 동기화 (Realtime)<br>· 계정 삭제 (본인 데이터 전부 영구 삭제)<br>· 가입자·방문자 통계 (관리자 전용)<br>· 방문 분석 (GA4)<br>· 파비콘·로고 적용<br>· 사용자별 데이터 완전 격리</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="d09-section d09-journey-section">
+    <p class="d09-wrap d09-h2">가설 → 검증 → 재설계</p>
+    <div class="d09-wrap d09-journey">
+      <div class="d09-journey-card">
+        <p class="d09-journey-num">1</p>
+        <p class="d09-journey-title">처음의 가설</p>
+        <p class="d09-journey-desc">“브라우저 북마크 대신 썸네일로 보이면 더 자주 열어보지 않을까?”</p>
+      </div>
+      <div class="d09-journey-card">
+        <p class="d09-journey-num">2</p>
+        <p class="d09-journey-title">실제 구현</p>
+        <p class="d09-journey-desc">Supabase 인증·DB + Vercel 정적 배포<br>카드 그리드와 카테고리 구현</p>
+      </div>
+      <div class="d09-journey-card">
+        <p class="d09-journey-num">3</p>
+        <p class="d09-journey-title">실제 사용</p>
+        <p class="d09-journey-desc">실제 북마크를 쌓으며<br>정렬과 검색 방식을 검증</p>
+      </div>
+      <div class="d09-journey-card">
+        <p class="d09-journey-num">4</p>
+        <p class="d09-journey-title">문제 발견</p>
+        <p class="d09-journey-desc">드래그 후 서버 응답을 기다리느라<br>카드가 튕겨 보이는 지연 발생</p>
+      </div>
+      <div class="d09-journey-card">
+        <p class="d09-journey-num">5</p>
+        <p class="d09-journey-title">재설계</p>
+        <p class="d09-journey-desc">화면 먼저 반영 → 서버 저장<br>실패 시에만 재조회하는 구조로 전환</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="d09-section d09-flowdata">
+    <div class="d09-wrap d09-flowdata__head">
+      <p class="d09-h2">데이터의 흐름</p>
+      <p class="d09-flowdata__desc">사용자 하나가 카테고리와 북마크를 소유하고, 모든 데이터는 사용자 기준으로만 조회됨</p>
+    </div>
+    <div class="d09-wrap d09-entities">
+      <div class="d09-entity">
+        <p class="d09-entity__title">User</p>
+        <p class="d09-entity__desc">구글·카카오 계정<br>세션 토큰</p>
+      </div>
+      <p class="d09-entity__rel">→</p>
+      <div class="d09-entity">
+        <p class="d09-entity__title">Category</p>
+        <p class="d09-entity__desc">이름<br>소유자(user_id)</p>
+      </div>
+      <p class="d09-entity__rel">→</p>
+      <div class="d09-entity">
+        <p class="d09-entity__title">Bookmark</p>
+        <p class="d09-entity__desc">URL · 제목 · 메모<br>카테고리 · 정렬 순서</p>
+      </div>
+    </div>
+    <div class="d09-wrap d09-flows">
+      <div class="d09-flow">
+        <p class="d09-flow__title">A  ·  북마크 추가 흐름</p>
+        <div class="d09-flow__row">
+          <p class="d09-flow__step">URL 입력</p>
+          <p class="d09-flow__arrow">→</p>
+          <p class="d09-flow__step">도메인·제목 자동 채움</p>
+          <p class="d09-flow__arrow">→</p>
+          <p class="d09-flow__step">Bookmark 저장</p>
+          <p class="d09-flow__arrow">→</p>
+          <p class="d09-flow__step">카드 생성</p>
+        </div>
+      </div>
+      <div class="d09-flow">
+        <p class="d09-flow__title">B  ·  순서 변경 흐름</p>
+        <div class="d09-flow__row">
+          <p class="d09-flow__step">카드 드래그</p>
+          <p class="d09-flow__arrow">→</p>
+          <p class="d09-flow__step">화면에 먼저 반영</p>
+          <p class="d09-flow__arrow">→</p>
+          <p class="d09-flow__step">서버에 저장</p>
+          <p class="d09-flow__arrow">→</p>
+          <p class="d09-flow__step">실패 시 재조회</p>
+        </div>
+      </div>
+      <div class="d09-flow">
+        <p class="d09-flow__title">C  ·  기기 동기화 흐름</p>
+        <div class="d09-flow__row">
+          <p class="d09-flow__step">로그인</p>
+          <p class="d09-flow__arrow">→</p>
+          <p class="d09-flow__step">사용자 데이터 조회</p>
+          <p class="d09-flow__arrow">→</p>
+          <p class="d09-flow__step">Realtime 구독</p>
+          <p class="d09-flow__arrow">→</p>
+          <p class="d09-flow__step">다른 기기에도 즉시 반영</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="d09-section d09-block">
+    <div class="d09-wrap d09-block__head">
+      <div class="d09-block__top">
+        <p class="d09-eyebrow">Highlight 01 · Drag &amp; Drop</p>
+        <p class="d09-block__title">카드를 끌어 놓으면 순서가 바로 바뀐다</p>
+      </div>
+      <p class="d09-block__desc">순서 변경을 ‘입력’이 아니라 ‘배치’로 정의<br>카드를 끌어 놓는 즉시 화면이 바뀌고, 저장은 뒤에서 처리<br><br>자주 보는 사이트를 손이 가는 곳에 두도록 설계</p>
+      <p class="d09-block__flow">Drag → Drop → Instant Save</p>
+    </div>
+    <div class="d09-wrap d09-figure">
+      <img class="d09-figure__img" style="--fig-w:1560px;" src="../assets/images/work-09/09-02.png" alt="Highlight 01 · Drag & Drop 화면" onerror="this.classList.add('d09-figure__img--missing')">
+    </div>
+  </section>
+
+  <section class="d09-section d09-block">
+    <div class="d09-wrap d09-block__head">
+      <div class="d09-block__top">
+        <p class="d09-eyebrow">Highlight 02 · Login &amp; Sync</p>
+        <p class="d09-block__title">로그인하면 어느 기기에서든 같은 북마크</p>
+      </div>
+      <p class="d09-block__desc">계정마다 독립된 데이터 공간<br>다른 기기에서 로그인해도 같은 카테고리와 순서 그대로<br><br>사용자 격리를 DB 정책으로 강제해 개인 북마크가 섞이지 않도록 설계</p>
+      <p class="d09-block__flow">Google / Kakao Login → Realtime Sync</p>
+    </div>
+    <div class="d09-wrap d09-figure">
+      <img class="d09-figure__img" style="--fig-w:1560px;" src="../assets/images/work-09/09-03.png" alt="Highlight 02 · Login & Sync 화면" onerror="this.classList.add('d09-figure__img--missing')">
+    </div>
+  </section>
+
+  <section class="d09-section d09-screens">
+    <p class="d09-wrap d09-h2">그 외 주요 화면</p>
+    <div class="d09-wrap d09-screens-grid">
+      <div class="d09-screen-item">
+        <div class="d09-screen-item__figure">
+          <img src="../assets/images/work-09/09-04.png" alt="메인 그리드 화면" onerror="this.classList.add('d09-figure__img--missing')">
+        </div>
+        <div class="d09-screen-item__text">
+          <p class="d09-screen-item__title">Grid</p>
+          <p class="d09-screen-item__desc">썸네일 카드로 한눈에 훑고 카테고리별 개수 확인</p>
+        </div>
+      </div>
+      <div class="d09-screen-item">
+        <div class="d09-screen-item__figure">
+          <img src="../assets/images/work-09/09-05.png" alt="북마크 추가 화면" onerror="this.classList.add('d09-figure__img--missing')">
+        </div>
+        <div class="d09-screen-item__text">
+          <p class="d09-screen-item__title">Add Bookmark</p>
+          <p class="d09-screen-item__desc">URL만 넣으면 제목과 파비콘을 자동으로 채움</p>
+        </div>
+      </div>
+      <div class="d09-screen-item">
+        <div class="d09-screen-item__figure">
+          <img src="../assets/images/work-09/09-06.png" alt="로그인 화면" onerror="this.classList.add('d09-figure__img--missing')">
+        </div>
+        <div class="d09-screen-item__text">
+          <p class="d09-screen-item__title">Login</p>
+          <p class="d09-screen-item__desc">별도 가입 없이 구글·카카오 계정으로 바로 시작</p>
+        </div>
+      </div>
+      <div class="d09-screen-item">
+        <div class="d09-screen-item__figure">
+          <img src="../assets/images/work-09/09-07.png" alt="검색 화면" onerror="this.classList.add('d09-figure__img--missing')">
+        </div>
+        <div class="d09-screen-item__text">
+          <p class="d09-screen-item__title">Search</p>
+          <p class="d09-screen-item__desc">제목·주소·메모 어디서든 입력하는 즉시 필터링</p>
+        </div>
+      </div>
+      <div class="d09-screen-item">
+        <div class="d09-screen-item__figure">
+          <img src="../assets/images/work-09/09-08.png" alt="가져오기·내보내기 화면" onerror="this.classList.add('d09-figure__img--missing')">
+        </div>
+        <div class="d09-screen-item__text">
+          <p class="d09-screen-item__title">Import · Export</p>
+          <p class="d09-screen-item__desc">JSON 파일로 백업하고 다른 계정에 옮기기</p>
+        </div>
+      </div>
+      <div class="d09-screen-item">
+        <div class="d09-screen-item__figure">
+          <img src="../assets/images/work-09/09-09.png" alt="관리자 통계 화면" onerror="this.classList.add('d09-figure__img--missing')">
+        </div>
+        <div class="d09-screen-item__text">
+          <p class="d09-screen-item__title">Stats (관리자)</p>
+          <p class="d09-screen-item__desc">가입자·방문자 추이를 관리자 계정에서만 확인</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="d09-result">
+    <div class="d09-result__eyebrow-row">
+      <p class="d09-result__eyebrow">결과</p>
+    </div>
+    <p class="d09-result__title">
+      흩어진 북마크를 카테고리와 썸네일 그리드로 정리하고,<br>
+      드래그 편집과 로그인 동기화로 기기 간 경험을 하나로 통합
+    </p>
+    <div class="d09-result__checklist">
+      <div class="d09-result__item">
+        <p class="d09-result__num">01 · 흩어진 북마크</p>
+        <p class="d09-result__label">카테고리 + 썸네일 그리드로<br>한눈에 정리</p>
+      </div>
+      <div class="d09-result__item">
+        <p class="d09-result__num">02 · 기기별 단절</p>
+        <p class="d09-result__label">구글·카카오 로그인 기반<br>실시간 동기화</p>
+      </div>
+      <div class="d09-result__item">
+        <p class="d09-result__num">03 · 느린 순서 편집</p>
+        <p class="d09-result__label">드래그 즉시 반영,<br>실패 시 서버 기준으로 복구</p>
+      </div>
+      <div class="d09-result__item">
+        <p class="d09-result__num">04 · 개인 데이터 혼선</p>
+        <p class="d09-result__label">사용자별 RLS 격리로<br>데이터 분리</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<nav class="pager" aria-label="포트폴리오 페이지 이동">
+  <a href="08.html" class="pager__arrow pager__arrow--prev" aria-label="이전 페이지로 이동">
+    <img src="../assets/icons/chevron.svg" alt="">
+  </a>
+  <span class="pager__count"><span class="pager__current">09</span> / <span class="pager__total">09</span></span>
+  <a href="99.html" class="pager__arrow pager__arrow--next" aria-label="다음 페이지로 이동">
+    <img src="../assets/icons/chevron.svg" alt="">
+  </a>
+</nav>
+
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
