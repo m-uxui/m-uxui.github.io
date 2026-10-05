@@ -763,3 +763,5 @@
 }
 .d08-cta:hover { background: #181818; border-color: #181818; color: #fff; }
 .d08-cta__arrow { font-size: 15px; line-height: 1; }
+
+.d08-desc__why { margin-top: 16px; color: var(--text-muted, #9a9a9a); }
