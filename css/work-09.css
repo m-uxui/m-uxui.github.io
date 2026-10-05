@@ -459,7 +459,7 @@
    스텝이 4개인 행(C)은 마지막 칸이 자동으로 빈 공간이 됨 */
 .d09-flow__row {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr) 36px) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 36px minmax(0, 1fr) 36px minmax(0, 1fr) 36px minmax(0, 1fr);
   align-items: center;
   column-gap: 20px;
 }
@@ -762,3 +762,5 @@
 }
 .d09-cta:hover { background: #181818; border-color: #181818; color: #fff; }
 .d09-cta__arrow { font-size: 15px; line-height: 1; }
+
+.d09-desc__why { margin-top: 16px; color: var(--text-muted, #9a9a9a); }
