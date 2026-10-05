@@ -41,8 +41,15 @@
   gap: 40px;
 }
 
-.d08-title {
+.d08-title-col {
   flex: 1 0 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.d08-title {
+  flex: none;
   font-weight: 100;
   font-size: clamp(32px, 4.5vw, 54px);
   line-height: 1.4;
@@ -739,3 +746,20 @@
     flex-basis: 100%;
   }
 }
+
+.d08-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 24px;
+  padding: 10px 18px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+  transition: background .15s, color .15s;
+}
+.d08-cta:hover { background: #181818; border-color: #181818; color: #fff; }
+.d08-cta__arrow { font-size: 15px; line-height: 1; }
