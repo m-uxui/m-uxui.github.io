@@ -388,14 +388,13 @@
 }
 
 .d09-entities {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 36px minmax(0, 1fr) 36px minmax(0, 1fr);
   align-items: stretch;
-  gap: 20px;
-  flex-wrap: wrap;
+  column-gap: 20px;
 }
 
 .d09-entity {
-  flex: 1 1 0;
   min-width: 0;
   background: #f7f7f7;
   padding: 22px;
@@ -421,6 +420,7 @@
 
 .d09-entity__rel {
   align-self: center;
+  text-align: center;
   font-family: 'IBM Plex Sans KR', sans-serif;
   font-weight: 200;
   font-size: 32px;
@@ -459,7 +459,7 @@
    스텝이 4개인 행(C)은 마지막 칸이 자동으로 빈 공간이 됨 */
 .d09-flow__row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 36px minmax(0, 1fr) 36px minmax(0, 1fr) 36px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 36px minmax(0, 1fr) 36px minmax(0, 1fr);
   align-items: center;
   column-gap: 20px;
 }
